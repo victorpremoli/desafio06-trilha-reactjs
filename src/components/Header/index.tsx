@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Image } from "@chakra-ui/react";
 import { Logo } from "./Logo";
 
 export function Header() {
@@ -13,6 +13,7 @@ export function Header() {
       mt='4'
       px='6'
     >
+      <Image src='/Arrow.svg'/>
       <Logo />
     </Flex>
   );
