@@ -1,6 +1,9 @@
+import Link from 'next/link'
 import { Box, Image, Text } from '@chakra-ui/react';
 
 import { Swiper, SwiperSlide } from 'swiper/react'
+
+
 
 import "swiper/swiper.min.css";
 import "swiper/components/zoom/zoom.min.css";
@@ -32,12 +35,15 @@ export function Slide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image
-            width='100%'
-            height='100%'
-            objectFit='cover'
-            src='https://images.unsplash.com/photo-1493707553966-283afac8c358?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
-          />
+          <Link href='/continent/europa'>
+            <Image
+              cursor='pointer'
+              width='100%'
+              height='100%'
+              objectFit='cover'
+              src='https://images.unsplash.com/photo-1493707553966-283afac8c358?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
+            />
+          </Link>
           <Text position='absolute' fontWeight='bold' fontSize='48px' color='#F5F8FA'>
 
             EUROPA
@@ -48,12 +54,15 @@ export function Slide() {
           </Text>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            width='100%'
-            height='100%'
-            objectFit='cover'
-            src='https://images.unsplash.com/photo-1535139262971-c51845709a48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
-          />
+          <Link href='/continent/asia' >
+            <Image
+              cursor='pointer'
+              width='100%'
+              height='100%'
+              objectFit='cover'
+              src='https://images.unsplash.com/photo-1535139262971-c51845709a48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+            />
+          </Link>
           <Text position='absolute' fontWeight='bold' fontSize='48px' color='#F5F8FA'>
 
             ÁSIA
@@ -64,12 +73,15 @@ export function Slide() {
           </Text>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            width='100%'
-            height='100%'
-            objectFit='cover'
-            src='https://images.unsplash.com/photo-1496588152823-86ff7695e68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
-          />
+          <Link href='/continent/norteamerica' >
+            <Image
+              cursor='pointer'
+              width='100%'
+              height='100%'
+              objectFit='cover'
+              src='https://images.unsplash.com/photo-1496588152823-86ff7695e68f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80'
+            />
+          </Link>
           <Text position='absolute' fontWeight='bold' fontSize='48px' color='#F5F8FA'>
 
             AMÉRICA DO NORTE
@@ -80,12 +92,15 @@ export function Slide() {
           </Text>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            width='100%'
-            height='100%'
-            objectFit='cover'
-            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-          />
+          <Link href='/continent/sulamerica' >
+            <Image
+              cursor='pointer'
+              width='100%'
+              height='100%'
+              objectFit='cover'
+              src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            />
+          </Link>
           <Text position='absolute' fontWeight='bold' fontSize='48px' color='#F5F8FA'>
 
             AMÉRICA DO SUL
@@ -95,13 +110,17 @@ export function Slide() {
             </Text>
           </Text>
         </SwiperSlide>
+
         <SwiperSlide>
-          <Image
-            width='100%'
-            height='100%'
-            objectFit='cover'
-            src="https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-          />
+          <Link href='/continent/oceania' passHref>
+            <Image
+              cursor='pointer'
+              width='100%'
+              height='100%'
+              objectFit='cover'
+              src="https://images.unsplash.com/photo-1589330273594-fade1ee91647?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            />
+          </Link>
           <Text position='absolute' fontWeight='bold' fontSize='48px' color='#F5F8FA'>
 
             OCEANIA

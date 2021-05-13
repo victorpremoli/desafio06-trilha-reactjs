@@ -32,7 +32,7 @@ export default function Continent() {
               width='100%'
               src={data.image}
             />
-            <Box position='absolute' color='#F5F8FA' fontSize={48} left={400} top={480}>{data.name}</Box>
+            <Box position='absolute' color='#ffffff' fontWeight='bold' fontSize={48} left={20} top={400}>{data.name}</Box>
           </Flex>
 
           <Grid gridTemplateColumns='1fr 1fr' maxWidth={1240} marginX='auto' marginY='80px' >
